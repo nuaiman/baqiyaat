@@ -36,7 +36,7 @@ class HarfCard extends StatelessWidget {
                       _buildText(harf.id.toString(), fontSize: 20 * scale),
                       GestureDetector(
                         onTap: () {
-                          showSnackbar(context, harf.toolTip);
+                          showSnackbar(context, harf.toolTipEn);
                         },
                         child: Icon(Icons.info_outline, color: AppPalette.red),
                       ),

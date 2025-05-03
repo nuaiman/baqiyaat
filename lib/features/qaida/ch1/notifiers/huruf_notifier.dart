@@ -14,8 +14,8 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'أَلِفُ',
           enPronunciation: 'Alif',
           bnPronunciation: 'আলিফ',
-          toolTip:
-              'It is a long vowel. Start from the empty space of the mouth.',
+          toolTipEn: 'Start from the empty space of the mouth.',
+          toolTipBn: 'মুখের ফাঁকা স্থান থেকে শুরু করুন।',
         ),
         Harf(
           id: 2,
@@ -26,8 +26,8 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'بَاءُ',
           enPronunciation: 'Ba',
           bnPronunciation: 'বা',
-          toolTip:
-              'It is a consonant. Pronounced from the wet part of both lips.',
+          toolTipEn: 'Pronounced from the wet part of both lips.',
+          toolTipBn: 'উভয় ঠোঁটের ভেজা অংশ থেকে উচ্চারণ করুন।',
         ),
         Harf(
           id: 3,
@@ -38,8 +38,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'تَاءُ',
           enPronunciation: 'Ta',
           bnPronunciation: 'তা',
-          toolTip:
-              'It is a consonant. Pronounced from the tip of the tongue touching the roots of the top two front teeth',
+          toolTipEn:
+              'Pronounced from the tip of the tongue touching the roots of the top two front teeth',
+          toolTipBn:
+              'জিবের আগা উপরের দুটি সামনে দাঁতের মূল অংশে স্পর্শ করে উচ্চারণ করুন।',
         ),
         Harf(
           id: 4,
@@ -50,8 +52,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'ثَاءُ',
           enPronunciation: 'T-Saa',
           bnPronunciation: 'ছা',
-          toolTip:
-              'It is a consonant. Pronounced from the tip of the tongue touching the inner edges of the top two front teeth.',
+          toolTipEn:
+              'Pronounced from the tip of the tongue touching the inner edges of the top two front teeth.',
+          toolTipBn:
+              'জিবের আগা উপরের দুটি সামনে দাঁতের ভেতরের প্রান্তে স্পর্শ করে উচ্চারণ করুন।',
         ),
         Harf(
           id: 5,
@@ -62,8 +66,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'جِيمٌ',
           enPronunciation: 'Jeem',
           bnPronunciation: 'জীম',
-          toolTip:
+          toolTipEn:
               'Pronounced from the middle part of the tongue touching the middle part of the palate.',
+          toolTipBn:
+              'জিবের মাঝের অংশটি তালুর মাঝের অংশে স্পর্শ করে উচ্চারণ করুন।',
         ),
         Harf(
           id: 6,
@@ -74,8 +80,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'حَاءُ',
           enPronunciation: 'Ha’',
           bnPronunciation: 'হা’',
-          toolTip:
+          toolTipEn:
               'Pronounce it with a clear burst of air from the middle part of the throat. It is a heavy, throaty sound.',
+          toolTipBn:
+              'গলার মাঝের অংশ থেকে একটি স্পষ্ট বাতাসের বিস্ফোরণ সহ উচ্চারণ করুন। এটি একটি ভারী, গলা-ভিত্তিক ধ্বনি।',
         ),
         Harf(
           id: 7,
@@ -86,8 +94,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'خَاءُ',
           enPronunciation: 'Kh-w',
           bnPronunciation: 'খ',
-          toolTip:
+          toolTipEn:
               'Produced from top part of the throat. It is a heavy sound with outward burst of air.',
+          toolTipBn:
+              'গলার উপরের অংশ থেকে উৎপন্ন হয়। এটি একটি ভারী ধ্বনি, সঙ্গে বাইরের দিকে বাতাসের বিস্ফোরণ হয়।',
         ),
         Harf(
           id: 8,
@@ -98,8 +108,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'دَالٌ',
           enPronunciation: 'Dal',
           bnPronunciation: 'দাল',
-          toolTip:
+          toolTipEn:
               'Pronounced from the tip of the tongue touching the roots of the top two front teeth',
+          toolTipBn:
+              'জিবের আগা উপরের দুটি সামনে দাঁতের মূল অংশে স্পর্শ করে উচ্চারণ করুন।',
         ),
         Harf(
           id: 9,
@@ -110,8 +122,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'ذَالٌ',
           enPronunciation: 'Zal',
           bnPronunciation: 'যাল',
-          toolTip:
+          toolTipEn:
               'Pronounced from the tip of the tongue touching the inner edges of the top two front teeth.',
+          toolTipBn:
+              'জিবের আগা উপরের দুটি সামনে দাঁতের ভেতরের প্রান্তে স্পর্শ করে উচ্চারণ করুন।',
         ),
         Harf(
           id: 10,
@@ -122,8 +136,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'رَاءُ',
           enPronunciation: 'Rwa',
           bnPronunciation: 'র',
-          toolTip:
+          toolTipEn:
               'Raa is a light sound. Tap the tip of your tongue against the upper palate, creating a smooth, rolling vibration.',
+          toolTipBn:
+              'রা একটি হালকা ধ্বনি। জিবের আগাটি উপরের তালুর সাথে স্পর্শ করুন, একটি মসৃণ, ঘূর্ণনশীল কম্পন তৈরি করুন।',
         ),
         Harf(
           id: 11,
@@ -134,8 +150,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'زَايٌ',
           enPronunciation: 'Za',
           bnPronunciation: 'যা',
-          toolTip:
-              'Pronounced from the tip of the tongue touching the inner edges of the top two and bottom two front teeth .',
+          toolTipEn:
+              'Pronounced from the tip of the tongue touching the inner edges of the top two and bottom two front teeth.',
+          toolTipBn:
+              'জিবের আগা উপরের দুইটি এবং নিচের দুইটি সামনে দাঁতের ভেতরের প্রান্তে স্পর্শ করে উচ্চারণ করুন।',
         ),
         Harf(
           id: 12,
@@ -146,8 +164,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'سِينٌ',
           enPronunciation: 'Seen',
           bnPronunciation: 'সীন',
-          toolTip:
-              'Pronounced from the tip of the tongue touching the inner edges of the top two and bottom two front teeth .',
+          toolTipEn:
+              'Pronounced from the tip of the tongue touching the inner edges of the top two and bottom two front teeth.',
+          toolTipBn:
+              'জিবের আগা উপরের দুইটি এবং নিচের দুইটি সামনে দাঁতের ভেতরের প্রান্তে স্পর্শ করে উচ্চারণ করুন।',
         ),
         Harf(
           id: 13,
@@ -158,8 +178,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'شِينٌ',
           enPronunciation: 'Sheen',
           bnPronunciation: 'শীন',
-          toolTip:
+          toolTipEn:
               'Pronounced by raising the tongue slightly toward the hard palate and make a soft "sh" sound.',
+          toolTipBn:
+              'জিবটিকে কিছুটা উপরের তালুর দিকে উঁচু করে একটি নরম "শ" ধ্বনি উচ্চারণ করুন।',
         ),
         Harf(
           id: 14,
@@ -170,8 +192,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'صَادٌ',
           enPronunciation: 'Sw-ad',
           bnPronunciation: 'ছ-দ',
-          toolTip:
+          toolTipEn:
               'Pronounce it from the deep part of the palate, creating a heavy “S” sound with a distinct burst of air.',
+          toolTipBn:
+              'তালুর গভীর অংশ থেকে একটি ভারী “স” ধ্বনি উচ্চারণ করুন, সাথে একটি স্পষ্ট বাতাসের বিস্ফোরণ তৈরি করুন।',
         ),
         Harf(
           id: 15,
@@ -182,8 +206,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'ضَادٌ',
           enPronunciation: 'Dw-ad',
           bnPronunciation: 'দ্ব-দ',
-          toolTip:
+          toolTipEn:
               'Pronounce it from the deep part of the palate, creating a heavy “D” sound with a distinct burst of air.',
+          toolTipBn:
+              'তালুর গভীর অংশ থেকে একটি ভারী “ড” ধ্বনি উচ্চারণ করুন, সাথে একটি স্পষ্ট বাতাসের বিস্ফোরণ তৈরি করুন।',
         ),
         Harf(
           id: 16,
@@ -194,8 +220,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'طَاءُ',
           enPronunciation: 'Twa-O',
           bnPronunciation: 'ত্ব‌ও',
-          toolTip:
+          toolTipEn:
               'Pronounce it from the deep part of the palate, ensuring a deep and prolonged “T” sound with a distinct burst of air.',
+          toolTipBn:
+              'তালুর গভীর অংশ থেকে একটি গভীর ও দীর্ঘস্থায়ী “ট” ধ্বনি উচ্চারণ করুন, সাথে একটি স্পষ্ট বাতাসের বিস্ফোরণ নিশ্চিত করুন।',
         ),
         Harf(
           id: 17,
@@ -206,8 +234,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'ظَاءُ',
           enPronunciation: 'Zwa-O',
           bnPronunciation: 'য‌ও',
-          toolTip:
+          toolTipEn:
               'Pronounce it heavily from the deep part of the palate, ensuring a deep and prolonged “Z” sound.',
+          toolTipBn:
+              'তালুর গভীর অংশ থেকে ভারীভাবে উচ্চারণ করুন, যাতে একটি গভীর ও দীর্ঘস্থায়ী “জ” ধ্বনি তৈরি হয়।',
         ),
         Harf(
           id: 18,
@@ -218,8 +248,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'عَيْنٌ',
           enPronunciation: 'Aa’yn',
           bnPronunciation: 'আ’ইন',
-          toolTip:
+          toolTipEn:
               'Produce it from the middle part of the throat with a distinct, deep sound, as if slightly choking, and elongate it properly.',
+          toolTipBn:
+              'গলার মাঝের অংশ থেকে একটি স্পষ্ট, গভীর ধ্বনি উৎপন্ন করুন, যেন কিছুটা দম বন্ধ হয়ে যাচ্ছে, এবং এটি সঠিকভাবে দীর্ঘায়িত করুন।',
         ),
         Harf(
           id: 19,
@@ -230,8 +262,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'غَيْنٌ',
           enPronunciation: 'Gwa-in',
           bnPronunciation: 'গইন',
-          toolTip:
+          toolTipEn:
               'Pronounce it from the back of the throat with a distinct guttural sound with a "Gh" accent.',
+          toolTipBn:
+              'গলার পেছন থেকে একটি স্পষ্ট গলা-ভিত্তিক ধ্বনি সহ “গ” উচ্চারণ করুন।',
         ),
         Harf(
           id: 20,
@@ -242,8 +276,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'فَاءُ',
           enPronunciation: 'Fa',
           bnPronunciation: 'ফা',
-          toolTip:
+          toolTipEn:
               'Pronounce it by gently placing the lower lip against the upper front teeth, emitting a soft “F” sound.',
+          toolTipBn:
+              'নিচের ঠোঁট উপরের সামনে দাঁতের সাথে মৃদুভাবে স্পর্শ করে একটি নরম “ফ” ধ্বনি উচ্চারণ করুন।',
         ),
         Harf(
           id: 21,
@@ -254,8 +290,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'قَافٌ',
           enPronunciation: 'Qw-of',
           bnPronunciation: 'ক্ব-ফ',
-          toolTip:
+          toolTipEn:
               'Pronounce it from the deep part of the palate, ensuring a heavy “K” sound, slightly emphasizing the back of the throat.',
+          toolTipBn:
+              'তালুর গভীর অংশ থেকে উচ্চারণ করুন, যাতে একটি ভারী “ক” ধ্বনি বের হয়, গলার পেছনের অংশে একটু জোর দিয়ে।',
         ),
         Harf(
           id: 22,
@@ -266,8 +304,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'كَافٌ',
           enPronunciation: 'Kaaf',
           bnPronunciation: 'কা-ফ',
-          toolTip:
+          toolTipEn:
               'Pronounce it by gently touching the back of the tongue against the soft palate, emitting a soft “K” sound.',
+          toolTipBn:
+              'জিবের পেছন অংশ নরম তালুর সাথে মৃদুভাবে স্পর্শ করে একটি নরম “ক” ধ্বনি উচ্চারণ করুন।',
         ),
         Harf(
           id: 23,
@@ -278,8 +318,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'لَامٌ',
           enPronunciation: 'Laam',
           bnPronunciation: 'লাম',
-          toolTip:
+          toolTipEn:
               'Pronounce it by gently touching the tip of the tongue against the upper palate while emitting a clear and soft “L” sound.',
+          toolTipBn:
+              'জিবের আগা উপরের তালুর সাথে মৃদুভাবে স্পর্শ করে একটি পরিষ্কার ও নরম “এল” ধ্বনি উচ্চারণ করুন।',
         ),
         Harf(
           id: 24,
@@ -290,8 +332,9 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'مِيمٌ',
           enPronunciation: 'Meem',
           bnPronunciation: 'মীম',
-          toolTip:
+          toolTipEn:
               'Pronounce it by closing the lips and emitting a soft “M” sound.',
+          toolTipBn: 'ঠোঁট বন্ধ করে একটি নরম “এম” ধ্বনি উচ্চারণ করুন।',
         ),
         Harf(
           id: 25,
@@ -302,8 +345,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'نُونٌ',
           enPronunciation: 'Noon',
           bnPronunciation: 'নূন',
-          toolTip:
+          toolTipEn:
               'Pronounce it by touching the tip of the tongue against the upper front teeth, emitting a soft and clear “N” sound.',
+          toolTipBn:
+              'জিবের আগা উপরের সামনে দাঁতের সাথে স্পর্শ করে একটি নরম ও পরিষ্কার “এন” ধ্বনি উচ্চারণ করুন।',
         ),
         Harf(
           id: 26,
@@ -314,8 +359,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'وَاوٌ',
           enPronunciation: 'Waw',
           bnPronunciation: 'ওয়াও',
-          toolTip:
+          toolTipEn:
               'Pronounced by the rounding of both lips starting from empty space of the mouth.',
+          toolTipBn:
+              'মুখের ফাঁকা স্থান থেকে শুরু করে উভয় ঠোঁট ঘুরিয়ে উচ্চারণ করুন।',
         ),
         Harf(
           id: 27,
@@ -326,8 +373,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'هَاءُ',
           enPronunciation: 'Ha',
           bnPronunciation: 'হা',
-          toolTip:
+          toolTipEn:
               'Pronounce it by lightly expelling air with a soft exhalation, ensuring a clear and distinct “H” sound.',
+          toolTipBn:
+              'নরমভাবে শ্বাস ছাড়ার মাধ্যমে হালকাভাবে বাতাস বের করে উচ্চারণ করুন, যাতে একটি স্পষ্ট ও পৃথক ‘হ’ ধ্বনি তৈরি হয়।',
         ),
         Harf(
           id: 28,
@@ -338,8 +387,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'هَمْزَةُ',
           enPronunciation: 'Hamza',
           bnPronunciation: 'হামযা',
-          toolTip:
+          toolTipEn:
               'Pronounce it by lightly expelling air with a soft exhalation, ensuring a clear and distinct “H” sound.',
+          toolTipBn:
+              'হালকাভাবে বাতাস নিঃসরণ করে একটি নরম শ্বাসের মাধ্যমে উচ্চারণ করুন, যাতে একটি পরিষ্কার ও স্বতন্ত্র "হ" ধ্বনি বের হয়।',
         ),
         Harf(
           id: 29,
@@ -350,8 +401,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           arPronunciation: 'يَاءُ',
           enPronunciation: 'Ya',
           bnPronunciation: 'ইয়া',
-          toolTip:
+          toolTipEn:
               'Pronounce it by slightly spread your lips and make a soft "Yaa" sound.',
+          toolTipBn:
+              'হালকা করে ঠোঁট ছড়িয়ে একটি নরম "ইয়া" ধ্বনি উচ্চারণ করুন।',
         ),
       ]);
 }

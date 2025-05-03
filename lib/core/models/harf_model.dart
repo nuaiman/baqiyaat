@@ -7,7 +7,8 @@ class Harf {
   final String arPronunciation;
   final String enPronunciation;
   final String bnPronunciation;
-  final String toolTip;
+  final String toolTipEn;
+  final String toolTipBn;
   Harf({
     required this.id,
     required this.isolated,
@@ -17,6 +18,7 @@ class Harf {
     required this.arPronunciation,
     required this.enPronunciation,
     required this.bnPronunciation,
-    required this.toolTip,
+    required this.toolTipEn,
+    required this.toolTipBn,
   });
 }
