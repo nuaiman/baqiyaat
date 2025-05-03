@@ -1,15 +1,19 @@
+import 'package:app/core/enums/language_enum.dart';
+import 'package:app/core/notifiers/language_notifier.dart';
 import 'package:app/core/theme/app_palette.dart';
 import 'package:app/core/utils/snackbar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../core/models/harf_model.dart';
 
-class HarfCard extends StatelessWidget {
+class HarfCard extends ConsumerWidget {
   const HarfCard({super.key, required this.harf});
 
   final Harf harf;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final isBanglaSelected = ref.watch(languageProvider) == LanguageEnum.bangla;
     return LayoutBuilder(
       builder: (context, constraints) {
         final width = constraints.maxWidth;
@@ -36,7 +40,10 @@ class HarfCard extends StatelessWidget {
                       _buildText(harf.id.toString(), fontSize: 20 * scale),
                       GestureDetector(
                         onTap: () {
-                          showSnackbar(context, harf.toolTipEn);
+                          showSnackbar(
+                            context,
+                            isBanglaSelected ? harf.toolTipBn : harf.toolTipEn,
+                          );
                         },
                         child: Icon(Icons.info_outline, color: AppPalette.red),
                       ),
@@ -56,9 +63,21 @@ class HarfCard extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              _buildListItem('Beginning', harf.start, scale),
-                              _buildListItem('Middle', harf.mid, scale),
-                              _buildListItem('Ending', harf.end, scale),
+                              _buildListItem(
+                                isBanglaSelected ? 'শুরু' : 'Beginning',
+                                harf.start,
+                                scale,
+                              ),
+                              _buildListItem(
+                                isBanglaSelected ? 'মধ্য' : 'Middle',
+                                harf.mid,
+                                scale,
+                              ),
+                              _buildListItem(
+                                isBanglaSelected ? 'সমাপ্তি' : 'Ending',
+                                harf.end,
+                                scale,
+                              ),
                             ],
                           ),
                         ),
@@ -71,9 +90,11 @@ class HarfCard extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
                               _buildIsolatedInfo(
-                                'Isolated',
+                                isBanglaSelected ? 'একক' : 'Isolated',
                                 harf.arPronunciation,
-                                harf.enPronunciation,
+                                isBanglaSelected
+                                    ? harf.bnPronunciation
+                                    : harf.enPronunciation,
                                 scale,
                               ),
                               SizedBox(height: 10 * scale),

@@ -1,4 +1,5 @@
 import 'package:app/core/enums/layout_orientation_enum.dart';
+import 'package:app/core/notifiers/language_notifier.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -16,7 +17,18 @@ class HurufScreen extends ConsumerWidget {
         ref.watch(orientationProvider) == LayoutOrientationEnum.landscape;
 
     return Scaffold(
-      appBar: AppBar(centerTitle: true, title: const Text('Arabic Letters')),
+      appBar: AppBar(
+        centerTitle: true,
+        title: const Text('Arabic Letters'),
+        actions: [
+          IconButton(
+            onPressed: () {
+              ref.read(languageProvider.notifier).setLanguage();
+            },
+            icon: Icon(Icons.language),
+          ),
+        ],
+      ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child:

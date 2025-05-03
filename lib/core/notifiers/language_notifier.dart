@@ -18,10 +18,15 @@ class LanguageNotifier extends StateNotifier<LanguageEnum> {
     }
   }
 
-  Future<void> setLanguage(LanguageEnum lang) async {
-    state = lang;
+  Future<void> setLanguage() async {
+    final currentLanguage = state;
+    if (currentLanguage == LanguageEnum.english) {
+      state = LanguageEnum.bangla;
+    } else if (currentLanguage == LanguageEnum.bangla) {
+      state = LanguageEnum.english;
+    }
     final prefs = await SharedPreferences.getInstance();
-    await prefs.setInt(_key, lang.index);
+    await prefs.setInt(_key, state.index);
   }
 }
 
