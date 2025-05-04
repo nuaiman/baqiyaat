@@ -5,10 +5,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../../core/notifiers/orientation_notifier.dart';
 import '../notifiers/huruf_notifier.dart';
-import '../widgets/harf_card.dart';
+import '../widgets/lesson_one_card.dart';
 
-class HurufScreen extends ConsumerWidget {
-  const HurufScreen({super.key});
+class LessonOneScreen extends ConsumerWidget {
+  const LessonOneScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -44,12 +44,13 @@ class HurufScreen extends ConsumerWidget {
                           crossAxisSpacing: 10,
                         ),
                     itemBuilder:
-                        (context, index) => HarfCard(harf: huruf[index]),
+                        (context, index) => LessonOneCard(harf: huruf[index]),
                   ),
                 )
                 : ListView.builder(
                   itemCount: huruf.length,
-                  itemBuilder: (context, index) => HarfCard(harf: huruf[index]),
+                  itemBuilder:
+                      (context, index) => LessonOneCard(harf: huruf[index]),
                 ),
       ),
     );

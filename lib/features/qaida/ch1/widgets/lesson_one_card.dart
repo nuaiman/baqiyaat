@@ -6,8 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../core/models/harf_model.dart';
 
-class HarfCard extends ConsumerWidget {
-  const HarfCard({super.key, required this.harf});
+class LessonOneCard extends ConsumerWidget {
+  const LessonOneCard({super.key, required this.harf});
 
   final Harf harf;
 

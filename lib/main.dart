@@ -5,7 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'core/notifiers/app_theme_notifier.dart';
 import 'core/notifiers/orientation_notifier.dart';
 import 'core/theme/app_theme.dart';
-import 'features/qaida/ch1/screens/huruf_screen.dart';
+import 'features/dashboard/screens/dashboard_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -33,7 +33,7 @@ class AlBaqiyaatApp extends ConsumerWidget {
       theme: AppTheme.lightThemeMode,
       darkTheme: AppTheme.darkThemeMode,
       themeMode: ThemeMode.system,
-      home: HurufScreen(),
+      home: DashboardScreen(),
     );
   }
 }
