@@ -37,30 +37,3 @@ class AlBaqiyaatApp extends ConsumerWidget {
     );
   }
 }
-
-// class HomeScreen extends ConsumerWidget {
-//   const HomeScreen({super.key});
-
-//   @override
-//   Widget build(BuildContext context, WidgetRef ref) {
-//     final layoutOrientation = ref.watch(orientationProvider);
-
-//     return Scaffold(
-//       appBar: AppBar(title: Text('Responsive Layout with StateNotifier')),
-//       body:
-//           layoutOrientation == LayoutOrientation.landscape
-//               ? Row(
-//                 mainAxisAlignment: MainAxisAlignment.center,
-//                 children: [
-//                   Text('Landscape Layout', style: TextStyle(fontSize: 24)),
-//                 ],
-//               )
-//               : Column(
-//                 mainAxisAlignment: MainAxisAlignment.center,
-//                 children: [
-//                   Text('Portrait Layout', style: TextStyle(fontSize: 24)),
-//                 ],
-//               ),
-//     );
-//   }
-// }
