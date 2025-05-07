@@ -1,17 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:app/core/utils/navigators.dart';
-import 'package:app/features/qaida/ch1/screens/lesson_one_screen.dart';
-import 'package:app/features/qaida/ch1/screens/lesson_two_screen.dart';
-import 'package:app/features/qaida/ch2/screens/harakat_screen.dart';
-import 'package:app/features/qaida/ch2/screens/tanween_screnn.dart';
+import 'package:app/features/qaida/ch1/screens/lesson_1_screen.dart';
+import 'package:app/features/qaida/ch1/screens/lesson_2_screen.dart';
+import 'package:app/features/qaida/ch2/screens/lesson_3_screen.dart';
+import 'package:app/features/qaida/ch2/screens/lesson_4_screen.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class QaidaScreen extends StatelessWidget {
+import '../../../../core/notifiers/language_notifier.dart';
+
+class QaidaScreen extends ConsumerWidget {
   const QaidaScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Qaida')),
+      appBar: AppBar(
+        centerTitle: true,
+        title: const Text('Qaida'),
+        actions: [
+          IconButton(
+            onPressed: () {
+              ref.read(languageProvider.notifier).setLanguage();
+            },
+            icon: Icon(Icons.language),
+          ),
+        ],
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -23,7 +37,7 @@ class QaidaScreen extends StatelessWidget {
                   _buildLessonTile(
                     context,
                     title: 'Lesson 1: Forms of Letters',
-                    onTap: () => navigateTo(context, const LessonOneScreen()),
+                    onTap: () => navigateTo(context, const Lesson1Screen()),
                   ),
                   _buildLessonTile(
                     context,
@@ -37,12 +51,12 @@ class QaidaScreen extends StatelessWidget {
                 _buildLessonTile(
                   context,
                   title: 'Lesson 3: Harakat',
-                  onTap: () => navigateTo(context, const HarakatsScreen()),
+                  onTap: () => navigateTo(context, const Lesson3Screen()),
                 ),
                 _buildLessonTile(
                   context,
                   title: 'Lesson 4: Tanween',
-                  onTap: () => navigateTo(context, const TanweensScreen()),
+                  onTap: () => navigateTo(context, const Lesson4Screen()),
                 ),
               ]),
 
