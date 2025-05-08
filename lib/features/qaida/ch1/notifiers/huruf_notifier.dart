@@ -352,20 +352,6 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
         ),
         Harf(
           id: 26,
-          isolated: 'و',
-          start: 'ـو',
-          mid: 'ـو',
-          end: 'ـو',
-          arPronunciation: 'وَاوٌ',
-          enPronunciation: 'Waw',
-          bnPronunciation: 'ওয়াও',
-          toolTipEn:
-              'Pronounced by the rounding of both lips starting from empty space of the mouth.',
-          toolTipBn:
-              'মুখের ফাঁকা স্থান থেকে শুরু করে উভয় ঠোঁট ঘুরিয়ে উচ্চারণ করুন।',
-        ),
-        Harf(
-          id: 27,
           isolated: 'ه',
           start: 'هـ',
           mid: 'ـهـ',
@@ -377,6 +363,20 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
               'Pronounce it by lightly expelling air with a soft exhalation, ensuring a clear and distinct “H” sound.',
           toolTipBn:
               'নরমভাবে শ্বাস ছাড়ার মাধ্যমে হালকাভাবে বাতাস বের করে উচ্চারণ করুন, যাতে একটি স্পষ্ট ও পৃথক ‘হ’ ধ্বনি তৈরি হয়।',
+        ),
+        Harf(
+          id: 27,
+          isolated: 'و',
+          start: 'ـو',
+          mid: 'ـو',
+          end: 'ـو',
+          arPronunciation: 'وَاوٌ',
+          enPronunciation: 'Waw',
+          bnPronunciation: 'ওয়াও',
+          toolTipEn:
+              'Pronounced by the rounding of both lips starting from empty space of the mouth.',
+          toolTipBn:
+              'মুখের ফাঁকা স্থান থেকে শুরু করে উভয় ঠোঁট ঘুরিয়ে উচ্চারণ করুন।',
         ),
         Harf(
           id: 28,
