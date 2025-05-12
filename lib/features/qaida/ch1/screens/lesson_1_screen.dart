@@ -1,6 +1,5 @@
 import 'package:app/core/enums/layout_orientation_enum.dart';
 import 'package:app/core/notifiers/app_theme_notifier.dart';
-import 'package:app/core/notifiers/language_notifier.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -27,12 +26,6 @@ class Lesson1Screen extends ConsumerWidget {
               ref.read(appThemeNotifierProvider.notifier).toggleTheme();
             },
             icon: Icon(Icons.light),
-          ),
-          IconButton(
-            onPressed: () {
-              ref.read(languageProvider.notifier).setLanguage();
-            },
-            icon: Icon(Icons.language),
           ),
         ],
       ),

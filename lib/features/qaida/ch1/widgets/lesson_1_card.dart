@@ -1,6 +1,5 @@
 import 'package:app/core/enums/language_enum.dart';
 import 'package:app/core/notifiers/language_notifier.dart';
-import 'package:app/core/utils/snackbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../core/models/harf_model.dart';
@@ -15,7 +14,7 @@ class LessonOneCard extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final isBanglaSelected = ref.watch(languageProvider) == LanguageEnum.bangla;
+    // final isBanglaSelected = ref.watch(languageProvider) == LanguageEnum.bangla;
     final isLightTheme = ref.watch(appThemeNotifierProvider) == ThemeMode.light;
     return LayoutBuilder(
       builder: (context, constraints) {
@@ -44,23 +43,12 @@ class LessonOneCard extends ConsumerWidget {
                     children: [
                       // Header Row
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           _buildText(
                             harf.id.toString(),
                             fontSize: 20 * scale,
                             isLightTheme: isLightTheme,
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              showSnackbar(
-                                context,
-                                isBanglaSelected
-                                    ? harf.toolTipBn
-                                    : harf.toolTipEn,
-                              );
-                            },
-                            child: Icon(Icons.info_outline),
                           ),
                         ],
                       ),
@@ -77,21 +65,9 @@ class LessonOneCard extends ConsumerWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
-                                _buildListItem(
-                                  isBanglaSelected ? 'শুরু' : 'Beginning',
-                                  harf.start,
-                                  scale,
-                                ),
-                                _buildListItem(
-                                  isBanglaSelected ? 'মধ্য' : 'Middle',
-                                  harf.mid,
-                                  scale,
-                                ),
-                                _buildListItem(
-                                  isBanglaSelected ? 'সমাপ্তি' : 'Ending',
-                                  harf.end,
-                                  scale,
-                                ),
+                                _buildListItem('Beginning', harf.start, scale),
+                                _buildListItem('Middle', harf.mid, scale),
+                                _buildListItem('Ending', harf.end, scale),
                               ],
                             ),
                           ),
@@ -104,11 +80,9 @@ class LessonOneCard extends ConsumerWidget {
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
                                 _buildIsolatedInfo(
-                                  isBanglaSelected ? 'একক' : 'Isolated',
+                                  'Isolated',
                                   harf.arPronunciation,
-                                  isBanglaSelected
-                                      ? harf.bnPronunciation
-                                      : harf.enPronunciation,
+                                  harf.enPronunciation,
                                   scale,
                                 ),
                                 SizedBox(height: 10 * scale),

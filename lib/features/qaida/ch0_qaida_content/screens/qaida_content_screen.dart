@@ -5,7 +5,6 @@ import 'package:app/features/qaida/ch1/screens/lesson_2_screen.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../../core/notifiers/app_theme_notifier.dart';
-import '../../../../core/notifiers/language_notifier.dart';
 
 class QaidaContentScreen extends ConsumerWidget {
   const QaidaContentScreen({super.key});
@@ -22,12 +21,6 @@ class QaidaContentScreen extends ConsumerWidget {
               ref.read(appThemeNotifierProvider.notifier).toggleTheme();
             },
             icon: Icon(Icons.light),
-          ),
-          IconButton(
-            onPressed: () {
-              ref.read(languageProvider.notifier).setLanguage();
-            },
-            icon: Icon(Icons.language),
           ),
         ],
       ),
