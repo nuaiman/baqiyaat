@@ -24,7 +24,6 @@ flutter:
   uses-material-design: true
   assets:
     - assets/jsons/
-    - assets/audio/quran/
     - assets/audio/qaida/lesson1/
     - assets/audio/qaida/lesson2/
 

@@ -1,8 +1,8 @@
 import 'package:app/core/models/tanween_model.dart';
 import 'package:flutter/material.dart';
 
-class Lesson4Card extends StatelessWidget {
-  const Lesson4Card({super.key, required this.tanweenModel});
+class Lesson5Card extends StatelessWidget {
+  const Lesson5Card({super.key, required this.tanweenModel});
 
   final TanweenModel tanweenModel;
 

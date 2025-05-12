@@ -8,10 +8,10 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
         Harf(
           id: 1,
           isolated: 'ا',
-          start: 'ا أَ',
-          mid: 'ا أَ ـا ـأ',
-          end: 'ا أَ ـا ـأ',
-          arPronunciation: 'أَلِفُ',
+          start: 'أ',
+          mid: 'ـأ',
+          end: 'ـأ',
+          arPronunciation: 'اَﻟِﻒْ',
           enPronunciation: 'Alif',
           bnPronunciation: 'আলিফ',
           toolTipEn: 'Start from the empty space of the mouth.',
@@ -23,7 +23,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'بـ',
           mid: 'ـبـ',
           end: 'ـب',
-          arPronunciation: 'بَاءُ',
+          arPronunciation: 'ﺑَﺎ',
           enPronunciation: 'Ba',
           bnPronunciation: 'বা',
           toolTipEn: 'Pronounced from the wet part of both lips.',
@@ -35,7 +35,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'تـ',
           mid: 'ـتـ',
           end: 'ـت',
-          arPronunciation: 'تَاءُ',
+          arPronunciation: 'ﺗَﺎ',
           enPronunciation: 'Ta',
           bnPronunciation: 'তা',
           toolTipEn:
@@ -49,7 +49,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'ثـ',
           mid: 'ـثـ',
           end: 'ـث',
-          arPronunciation: 'ثَاءُ',
+          arPronunciation: 'ﺛَﺎ',
           enPronunciation: 'T-Saa',
           bnPronunciation: 'ছা',
           toolTipEn:
@@ -63,7 +63,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'جـ',
           mid: 'ـجـ',
           end: 'ـج',
-          arPronunciation: 'جِيمٌ',
+          arPronunciation: 'ﺟِﻴﻢ',
           enPronunciation: 'Jeem',
           bnPronunciation: 'জীম',
           toolTipEn:
@@ -77,7 +77,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'حـ',
           mid: 'ـحـ',
           end: 'ـح',
-          arPronunciation: 'حَاءُ',
+          arPronunciation: 'ﺣَﺎ',
           enPronunciation: 'Ha’',
           bnPronunciation: 'হা’',
           toolTipEn:
@@ -91,7 +91,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'خـ',
           mid: 'ـخـ',
           end: 'ـخ',
-          arPronunciation: 'خَاءُ',
+          arPronunciation: 'ﺧَﺎ',
           enPronunciation: 'Kh-w',
           bnPronunciation: 'খ',
           toolTipEn:
@@ -105,7 +105,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'ـد',
           mid: 'ـد',
           end: 'ـد',
-          arPronunciation: 'دَالٌ',
+          arPronunciation: 'دَالْ',
           enPronunciation: 'Dal',
           bnPronunciation: 'দাল',
           toolTipEn:
@@ -119,7 +119,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'ـذ',
           mid: 'ـذ',
           end: 'ـذ',
-          arPronunciation: 'ذَالٌ',
+          arPronunciation: 'ذَالْ',
           enPronunciation: 'Zal',
           bnPronunciation: 'যাল',
           toolTipEn:
@@ -133,7 +133,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'ـر',
           mid: 'ـر',
           end: 'ـر',
-          arPronunciation: 'رَاءُ',
+          arPronunciation: 'رَا',
           enPronunciation: 'Rwa',
           bnPronunciation: 'র',
           toolTipEn:
@@ -147,7 +147,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'ـز',
           mid: 'ـز',
           end: 'ـز',
-          arPronunciation: 'زَايٌ',
+          arPronunciation: 'زَا',
           enPronunciation: 'Za',
           bnPronunciation: 'যা',
           toolTipEn:
@@ -161,7 +161,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'سـ',
           mid: 'ـسـ',
           end: 'ـس',
-          arPronunciation: 'سِينٌ',
+          arPronunciation: 'ﺳِﻴْﻦْ',
           enPronunciation: 'Seen',
           bnPronunciation: 'সীন',
           toolTipEn:
@@ -175,7 +175,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'شـ',
           mid: 'ـشـ',
           end: 'ـش',
-          arPronunciation: 'شِينٌ',
+          arPronunciation: 'ﺷِﻴْﻦْ',
           enPronunciation: 'Sheen',
           bnPronunciation: 'শীন',
           toolTipEn:
@@ -189,7 +189,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'صـ',
           mid: 'ـصـ',
           end: 'ـص',
-          arPronunciation: 'صَادٌ',
+          arPronunciation: 'ﺻَﺎدْ',
           enPronunciation: 'Sw-ad',
           bnPronunciation: 'ছ-দ',
           toolTipEn:
@@ -203,7 +203,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'ضـ',
           mid: 'ـضـ',
           end: 'ـض',
-          arPronunciation: 'ضَادٌ',
+          arPronunciation: 'ﺿَﺎد',
           enPronunciation: 'Dw-ad',
           bnPronunciation: 'দ্ব-দ',
           toolTipEn:
@@ -217,7 +217,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'طـ',
           mid: 'ـطـ',
           end: 'ـط',
-          arPronunciation: 'طَاءُ',
+          arPronunciation: 'طَا',
           enPronunciation: 'Twa-O',
           bnPronunciation: 'ত্ব‌ও',
           toolTipEn:
@@ -231,7 +231,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'ظـ',
           mid: 'ـظـ',
           end: 'ـظ',
-          arPronunciation: 'ظَاءُ',
+          arPronunciation: 'ﻇَﺎ',
           enPronunciation: 'Zwa-O',
           bnPronunciation: 'য‌ও',
           toolTipEn:
@@ -245,7 +245,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'عـ',
           mid: 'ـعـ',
           end: 'ـع',
-          arPronunciation: 'عَيْنٌ',
+          arPronunciation: 'ﻋَﻴْﻦْ',
           enPronunciation: 'Aa’yn',
           bnPronunciation: 'আ’ইন',
           toolTipEn:
@@ -259,7 +259,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'غـ',
           mid: 'ـغـ',
           end: 'ـغ',
-          arPronunciation: 'غَيْنٌ',
+          arPronunciation: 'ﻏَﻴْﻦْ',
           enPronunciation: 'Gwa-in',
           bnPronunciation: 'গইন',
           toolTipEn:
@@ -273,7 +273,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'فـ',
           mid: 'ـفـ',
           end: 'ـف',
-          arPronunciation: 'فَاءُ',
+          arPronunciation: 'ﻓَﺎ',
           enPronunciation: 'Fa',
           bnPronunciation: 'ফা',
           toolTipEn:
@@ -287,7 +287,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'قـ',
           mid: 'ـقـ',
           end: 'ـق',
-          arPronunciation: 'قَافٌ',
+          arPronunciation: 'ﻗَﺎفْ',
           enPronunciation: 'Qw-of',
           bnPronunciation: 'ক্ব-ফ',
           toolTipEn:
@@ -301,7 +301,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'كـ',
           mid: 'ـكـ',
           end: 'ـك',
-          arPronunciation: 'كَافٌ',
+          arPronunciation: 'ﻛﺎَفْ',
           enPronunciation: 'Kaaf',
           bnPronunciation: 'কা-ফ',
           toolTipEn:
@@ -315,7 +315,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'لـ',
           mid: 'ـلـ',
           end: 'ـل',
-          arPronunciation: 'لَامٌ',
+          arPronunciation: 'ﻻَمْ',
           enPronunciation: 'Laam',
           bnPronunciation: 'লাম',
           toolTipEn:
@@ -329,7 +329,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'مـ',
           mid: 'ـمـ',
           end: 'ـم',
-          arPronunciation: 'مِيمٌ',
+          arPronunciation: 'ﻣِﻴْﻢْ',
           enPronunciation: 'Meem',
           bnPronunciation: 'মীম',
           toolTipEn:
@@ -342,7 +342,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'نـ',
           mid: 'ـنـ',
           end: 'ـن',
-          arPronunciation: 'نُونٌ',
+          arPronunciation: 'ﻧُﻮْنْ',
           enPronunciation: 'Noon',
           bnPronunciation: 'নূন',
           toolTipEn:
@@ -356,7 +356,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'هـ',
           mid: 'ـهـ',
           end: 'ـه',
-          arPronunciation: 'هَاءُ',
+          arPronunciation: 'ﻫَا',
           enPronunciation: 'Ha',
           bnPronunciation: 'হা',
           toolTipEn:
@@ -370,7 +370,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'ـو',
           mid: 'ـو',
           end: 'ـو',
-          arPronunciation: 'وَاوٌ',
+          arPronunciation: 'وَاوْ',
           enPronunciation: 'Waw',
           bnPronunciation: 'ওয়াও',
           toolTipEn:
@@ -384,7 +384,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'ء',
           mid: 'ء',
           end: 'ء',
-          arPronunciation: 'هَمْزَةُ',
+          arPronunciation: 'هَمْزَ',
           enPronunciation: 'Hamza',
           bnPronunciation: 'হামযা',
           toolTipEn:
@@ -398,7 +398,7 @@ class HurufNotifier extends StateNotifier<List<Harf>> {
           start: 'يـ',
           mid: 'ـيـ',
           end: 'ـي',
-          arPronunciation: 'يَاءُ',
+          arPronunciation: 'ﻳَﺎ',
           enPronunciation: 'Ya',
           bnPronunciation: 'ইয়া',
           toolTipEn:

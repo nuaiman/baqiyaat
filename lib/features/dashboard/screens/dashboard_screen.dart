@@ -1,7 +1,7 @@
 import 'package:app/core/utils/navigators.dart';
 import 'package:flutter/material.dart';
 
-import '../../qaida/ch0_contents/screens/qaida_screen.dart';
+import '../../qaida/ch0_qaida_content/screens/qaida_content_screen.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
@@ -11,7 +11,7 @@ class DashboardScreen extends StatelessWidget {
     return Scaffold(
       body: ElevatedButton(
         onPressed: () {
-          navigateTo(context, QaidaScreen());
+          navigateTo(context, QaidaContentScreen());
         },
         child: Text('Qaida'),
       ),

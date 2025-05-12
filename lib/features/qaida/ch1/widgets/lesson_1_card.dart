@@ -4,7 +4,9 @@ import 'package:app/core/utils/snackbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../core/models/harf_model.dart';
+import '../../../../core/notifiers/app_theme_notifier.dart';
 import '../../../../core/notifiers/audio_player.dart';
+import '../../../../core/theme/app_palette.dart';
 
 class LessonOneCard extends ConsumerWidget {
   const LessonOneCard({super.key, required this.harf});
@@ -14,11 +16,11 @@ class LessonOneCard extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final isBanglaSelected = ref.watch(languageProvider) == LanguageEnum.bangla;
+    final isLightTheme = ref.watch(appThemeNotifierProvider) == ThemeMode.light;
     return LayoutBuilder(
       builder: (context, constraints) {
         final width = constraints.maxWidth;
         final scale = width / 400;
-
         return Directionality(
           textDirection: TextDirection.ltr,
           child: GestureDetector(
@@ -35,33 +37,37 @@ class LessonOneCard extends ConsumerWidget {
               margin: EdgeInsets.all(10 * scale),
               child: Padding(
                 padding: EdgeInsets.all(15 * scale),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    // Header Row
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        _buildText(harf.id.toString(), fontSize: 20 * scale),
-                        GestureDetector(
-                          onTap: () {
-                            showSnackbar(
-                              context,
-                              isBanglaSelected
-                                  ? harf.toolTipBn
-                                  : harf.toolTipEn,
-                            );
-                          },
-                          child: Icon(Icons.info_outline),
-                        ),
-                      ],
-                    ),
-                    SizedBox(height: 20 * scale),
+                child: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      // Header Row
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          _buildText(
+                            harf.id.toString(),
+                            fontSize: 20 * scale,
+                            isLightTheme: isLightTheme,
+                          ),
+                          GestureDetector(
+                            onTap: () {
+                              showSnackbar(
+                                context,
+                                isBanglaSelected
+                                    ? harf.toolTipBn
+                                    : harf.toolTipEn,
+                              );
+                            },
+                            child: Icon(Icons.info_outline),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 40 * scale),
 
-                    // Letter Layout Row
-                    IntrinsicHeight(
-                      child: Row(
+                      // Letter Layout Row
+                      Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           // Left column (start, middle, end)
@@ -69,7 +75,7 @@ class LessonOneCard extends ConsumerWidget {
                             flex: 2,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 _buildListItem(
                                   isBanglaSelected ? 'শুরু' : 'Beginning',
@@ -107,12 +113,6 @@ class LessonOneCard extends ConsumerWidget {
                                 ),
                                 SizedBox(height: 10 * scale),
                                 Card.outlined(
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(
-                                      15 * scale,
-                                    ),
-                                    // side: BorderSide(color: AppPalette.grey),
-                                  ),
                                   child: Center(
                                     child: Padding(
                                       padding: EdgeInsets.all(12 * scale),
@@ -121,9 +121,9 @@ class LessonOneCard extends ConsumerWidget {
                                         style: Theme.of(
                                           context,
                                         ).textTheme.bodyLarge?.copyWith(
-                                          fontSize: 90 * scale,
+                                          fontSize: 100 * scale,
                                           // color: AppPalette.active,
-                                          fontWeight: FontWeight.bold,
+                                          // fontWeight: FontWeight.bold,
                                         ),
                                       ),
                                     ),
@@ -134,8 +134,8 @@ class LessonOneCard extends ConsumerWidget {
                           ),
                         ],
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -145,10 +145,18 @@ class LessonOneCard extends ConsumerWidget {
     );
   }
 
-  Widget _buildText(String text, {required double fontSize}) {
+  Widget _buildText(
+    String text, {
+    required double fontSize,
+    required bool isLightTheme,
+  }) {
     return Text(
       text,
-      style: TextStyle(fontSize: fontSize, fontWeight: FontWeight.w600),
+      style: TextStyle(
+        fontSize: fontSize,
+        fontWeight: FontWeight.w600,
+        color: isLightTheme ? AppPalette.lightTitle : AppPalette.darkTitle,
+      ),
     );
   }
 
@@ -163,7 +171,7 @@ class LessonOneCard extends ConsumerWidget {
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 12 * scale,
-              // color: AppPalette.active,
+              color: AppPalette.active,
             ),
           ),
           // SizedBox(height: 4 * scale),
@@ -187,7 +195,7 @@ class LessonOneCard extends ConsumerWidget {
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 12 * scale,
-              // color: AppPalette.active,
+              color: AppPalette.active,
             ),
           ),
           SizedBox(height: 4 * scale),

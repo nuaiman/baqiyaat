@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/models/harakat_model.dart';
 
-class Lesson3Card extends StatelessWidget {
-  const Lesson3Card({super.key, required this.harakatModel});
+class Lesson4Card extends StatelessWidget {
+  const Lesson4Card({super.key, required this.harakatModel});
 
   final HarakatModel harakatModel;
 

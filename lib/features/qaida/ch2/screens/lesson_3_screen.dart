@@ -16,7 +16,7 @@ class Lesson3Screen extends ConsumerWidget {
         itemCount: harakats.length,
         itemBuilder: (context, index) {
           final harakt = harakats[index];
-          return Lesson3Card(harakatModel: harakt);
+          return Lesson4Card(harakatModel: harakt);
         },
       ),
     );
