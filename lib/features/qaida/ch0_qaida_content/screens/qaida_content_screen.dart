@@ -86,7 +86,8 @@ class QaidaContentScreen extends ConsumerWidget {
                 ),
                 _buildLessonTile(
                   context,
-                  title: 'Lesson 9: Extended Madd (4-count & 6-count)',
+                  title:
+                      'Lesson 9: Madd Mutaṣṣil & Munfaṣṣil (4-count & 6-count)',
                   // onTap: () => navigateTo(context, const WaawMaddScreen()),
                 ),
                 _buildLessonTile(
