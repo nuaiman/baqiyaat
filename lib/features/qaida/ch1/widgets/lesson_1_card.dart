@@ -1,5 +1,3 @@
-import 'package:app/core/enums/language_enum.dart';
-import 'package:app/core/notifiers/language_notifier.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../core/models/harf_model.dart';
@@ -26,7 +24,7 @@ class LessonOneCard extends ConsumerWidget {
             onTap: () {
               ref
                   .read(audioPlayerProvider.notifier)
-                  .play('assets/audio/qaida/lesson1/${harf.id}.mp3');
+                  .play('assets/audio/qaida/lesson1/${harf.id}.m4a');
             },
             child: Card(
               shape: RoundedRectangleBorder(

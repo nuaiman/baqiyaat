@@ -16,7 +16,6 @@ void main() async {
 
   // if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
   //   await windowManager.ensureInitialized();
-
   //   WindowOptions windowOptions = WindowOptions(
   //     size: const Size(350, 600),
   //     minimumSize: const Size(350, 600),
@@ -52,19 +51,6 @@ class AlBaqiyaatApp extends ConsumerWidget {
       theme: AppTheme.lightThemeMode,
       darkTheme: AppTheme.darkThemeMode,
       themeMode: themeMode,
-      // theme: ThemeData(
-      //   useMaterial3: true,
-      //   brightness: Brightness.dark,
-      //   fontFamily: 'Uthmani',
-      // ).copyWith(
-      //   appBarTheme: AppBarTheme(scrolledUnderElevation: 0, elevation: 0),
-      //   cardTheme: const CardTheme(elevation: 0),
-      //   bottomNavigationBarTheme: BottomNavigationBarThemeData(
-      //     selectedItemColor: Colors.white,
-      //     unselectedItemColor: Colors.grey.shade600,
-      //   ),
-      // ),
-      // home: DashboardScreen(),
       home: QaidaContentScreen(),
     );
   }

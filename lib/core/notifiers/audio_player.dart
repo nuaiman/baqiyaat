@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:just_audio/just_audio.dart';
 
@@ -10,7 +11,9 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayer> {
       await state.setAsset(assetPath);
       await state.play();
     } catch (e) {
-      print('Audio play error: $e');
+      if (kDebugMode) {
+        print('Audio play error: $e');
+      }
     }
   }
 

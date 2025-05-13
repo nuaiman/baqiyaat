@@ -26,6 +26,10 @@ flutter:
     - assets/jsons/
     - assets/audio/qaida/lesson1/
     - assets/audio/qaida/lesson2/
+    - assets/audio/qaida/lesson3/
+    - assets/audio/qaida/lesson4/
+    - assets/audio/qaida/lesson5/
+    - assets/audio/qaida/lesson6/
 
   fonts:
     - family: Uthmani

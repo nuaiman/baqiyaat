@@ -5,6 +5,11 @@ import 'package:app/features/qaida/ch1/screens/lesson_2_screen.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../../core/notifiers/app_theme_notifier.dart';
+import '../../ch2/screens/lesson_3_screen.dart';
+import '../../ch2/screens/lesson_4_screen.dart';
+import '../../ch2/screens/lesson_5_screen.dart';
+import '../../ch3/screens/lesson_6_screen.dart';
+import '../../ch3/screens/lesson_7_screen.dart';
 
 class QaidaContentScreen extends ConsumerWidget {
   const QaidaContentScreen({super.key});
@@ -45,23 +50,36 @@ class QaidaContentScreen extends ConsumerWidget {
                 ],
               ),
 
-              // _buildChapter(context, 'Chapter 2: Vowel Marks', [
-              //   _buildLessonTile(
-              //     context,
-              //     title: 'Lesson 3: Harakat',
-              //     onTap: () => navigateTo(context, const Lesson3Screen()),
-              //   ),
-              //   _buildLessonTile(
-              //     context,
-              //     title: 'Lesson 4: Tanween',
-              //     onTap: () => navigateTo(context, const Lesson4Screen()),
-              //   ),
-              // ]),
+              _buildChapter(context, 'Chapter 2: Vowel Marks', [
+                _buildLessonTile(
+                  context,
+                  title: 'Lesson 3: Harakat',
+                  onTap: () => navigateTo(context, const Lesson3Screen()),
+                ),
+                _buildLessonTile(
+                  context,
+                  title: 'Lesson 4: Tanween',
+                  onTap: () => navigateTo(context, const Lesson4Screen()),
+                ),
+                _buildLessonTile(
+                  context,
+                  title: 'Lesson 5: Grouped Letters with Harakat & Tanween',
+                  onTap: () => navigateTo(context, const Lesson5Screen()),
+                ),
+              ]),
 
-              // _buildChapter(context, 'Chapter 3: Sukoon and Qalqalah', [
-              //   _buildLessonTile(context, title: 'Lesson 5: Sukoon'),
-              //   _buildLessonTile(context, title: 'Lesson 6: Qalqalah'),
-              // ]),
+              _buildChapter(context, 'Chapter 3: Connecting Letters', [
+                _buildLessonTile(
+                  context,
+                  title: 'Lesson 6: Sukoon & Qalqalah',
+                  onTap: () => navigateTo(context, const Lesson6Screen()),
+                ),
+                _buildLessonTile(
+                  context,
+                  title: 'Lesson 7: Sukoon with Vowels (Grouped)',
+                  onTap: () => navigateTo(context, const Lesson7Screen()),
+                ),
+              ]),
 
               // _buildChapter(context, 'Chapter 4: Shaddah (Emphasis)', [
               //   _buildLessonTile(context, title: 'Lesson 7: Shaddah'),

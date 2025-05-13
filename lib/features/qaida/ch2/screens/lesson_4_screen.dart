@@ -16,7 +16,7 @@ class Lesson4Screen extends ConsumerWidget {
         itemCount: tanweens.length,
         itemBuilder: (context, index) {
           final tanween = tanweens[index];
-          return Lesson5Card(tanweenModel: tanween);
+          return Lesson4Card(tanweenModel: tanween);
         },
       ),
     );

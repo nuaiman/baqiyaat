@@ -27,7 +27,7 @@ class Lesson2Card extends ConsumerWidget {
           onTap: () {
             ref
                 .read(audioPlayerProvider.notifier)
-                .play('assets/audio/qaida/lesson2/$itemKey.mp3');
+                .play('assets/audio/qaida/lesson2/$itemKey.m4a');
           },
           child: Card(
             shape: RoundedRectangleBorder(
