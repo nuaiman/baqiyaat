@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import '../widgets/lesson_9_card.dart';
+import '../widgets/lesson_11_card.dart';
 
-class Lesson9Screen extends StatefulWidget {
-  const Lesson9Screen({super.key});
+class Lesson11Screen extends StatefulWidget {
+  const Lesson11Screen({super.key});
 
   @override
-  State<Lesson9Screen> createState() => _Lesson9ScreenState();
+  State<Lesson11Screen> createState() => _Lesson11ScreenState();
 }
 
-class _Lesson9ScreenState extends State<Lesson9Screen> {
+class _Lesson11ScreenState extends State<Lesson11Screen> {
   bool _showOverlay = true;
 
   final Map<String, Map<String, String>> groupedData = {
@@ -63,7 +63,7 @@ class _Lesson9ScreenState extends State<Lesson9Screen> {
               itemBuilder: (context, index) {
                 final itemKey = groupedData.keys.elementAt(index);
                 final itemValue = groupedData[itemKey]!['text']!;
-                return Lesson9Card(itemValue: itemValue, itemKey: itemKey);
+                return Lesson11Card(itemValue: itemValue, itemKey: itemKey);
               },
             ),
           ),

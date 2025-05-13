@@ -4,8 +4,8 @@ import '../../../../core/notifiers/app_theme_notifier.dart';
 import '../../../../core/notifiers/audio_player.dart';
 import '../../../../core/theme/app_palette.dart';
 
-class Lesson10Card extends ConsumerWidget {
-  const Lesson10Card({
+class Lesson12Card extends ConsumerWidget {
+  const Lesson12Card({
     super.key,
     required this.itemValue,
     required this.itemKey,
@@ -27,7 +27,7 @@ class Lesson10Card extends ConsumerWidget {
           onTap: () {
             ref
                 .read(audioPlayerProvider.notifier)
-                .play('assets/audio/qaida/lesson10/$itemKey.m4a');
+                .play('assets/audio/qaida/lesson12/$itemKey.m4a');
           },
           child: Card(
             shape: RoundedRectangleBorder(

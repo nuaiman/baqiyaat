@@ -8,8 +8,8 @@ import '../../../../core/notifiers/app_theme_notifier.dart';
 import '../../ch2/screens/lesson_3_screen.dart';
 import '../../ch2/screens/lesson_4_screen.dart';
 import '../../ch2/screens/lesson_5_screen.dart';
-import '../../ch4/screens/lesson_9_screen.dart';
-import '../../ch4/screens/lesson_10_screen.dart';
+import '../../ch4/screens/lesson_11_screen.dart';
+import '../../ch4/screens/lesson_12_screen.dart';
 
 class QaidaContentScreen extends ConsumerWidget {
   const QaidaContentScreen({super.key});
@@ -84,6 +84,16 @@ class QaidaContentScreen extends ConsumerWidget {
                   title: 'Lesson 8: Waaw Madd',
                   // onTap: () => navigateTo(context, const WaawMaddScreen()),
                 ),
+                _buildLessonTile(
+                  context,
+                  title: 'Lesson 9: Extended Madd (4-count & 6-count)',
+                  // onTap: () => navigateTo(context, const WaawMaddScreen()),
+                ),
+                _buildLessonTile(
+                  context,
+                  title: 'Lesson 10: Soft Madd (Madd Līn)',
+                  // onTap: () => navigateTo(context, const WaawMaddScreen()),
+                ),
               ]),
 
               // _buildChapter(context, 'Chapter 3: Connecting Letters', [
@@ -101,17 +111,17 @@ class QaidaContentScreen extends ConsumerWidget {
               _buildChapter(context, 'Chapter 4: Connecting Letters', [
                 _buildLessonTile(
                   context,
-                  title: 'Lesson 9: Sukoon & Qalqalah',
-                  onTap: () => navigateTo(context, const Lesson9Screen()),
+                  title: 'Lesson 11: Sukoon & Qalqalah',
+                  onTap: () => navigateTo(context, const Lesson11Screen()),
                 ),
                 _buildLessonTile(
                   context,
-                  title: 'Lesson 10: Sukoon with Vowels (Grouped)',
-                  onTap: () => navigateTo(context, const Lesson10Screen()),
+                  title: 'Lesson 12: Sukoon with Vowels (Grouped)',
+                  onTap: () => navigateTo(context, const Lesson12Screen()),
                 ),
                 _buildLessonTile(
                   context,
-                  title: 'Lesson 11: Shadda (Tashdeed)',
+                  title: 'Lesson 13: Shadda (Tashdeed)',
                   // onTap: () => navigateTo(context, const ShaddaLessonScreen()),
                 ),
               ]),

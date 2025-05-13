@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../widgets/lesson_10_card.dart';
+import '../widgets/lesson_12_card.dart';
 
-class Lesson10Screen extends StatelessWidget {
-  const Lesson10Screen({super.key});
+class Lesson12Screen extends StatelessWidget {
+  const Lesson12Screen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -67,7 +67,7 @@ class Lesson10Screen extends StatelessWidget {
           itemBuilder: (context, index) {
             final itemKey = groupedData.keys.elementAt(index);
             final itemValue = groupedData[itemKey]!['text']!;
-            return Lesson10Card(itemValue: itemValue, itemKey: itemKey);
+            return Lesson12Card(itemValue: itemValue, itemKey: itemKey);
           },
         ),
       ),
