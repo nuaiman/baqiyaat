@@ -1,0 +1,85 @@
+| **Rule**                       | **Explanation**                                                                      | **Example**                                            | **Pronunciation**                 |
+| ------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------ | --------------------------------- |
+| **Arabic Alphabet (Huruf)**    | Introduction to the basic Arabic letters.                                            | ب , ك , م                                              | Ba, Kaf, Ma                       |
+| **Letter Forms**               | Letters change forms depending on their position (beginning, middle, end, isolated). | بـ , ـبـ , ـب , ب                                      | بـ (Ba), ـبـ (Ba), ـب (B), ب (Ba) |
+| **Harakat (Short Vowels)**     | Short vowels: Fatha (ــَــ), Kasra (ــِــ), Damma (ــُــ).                           | بَ , بِ , بُ                                           | Ba, Bi, Bu                        |
+| **Tanween (Double Vowels)**    | Double short vowels: Fathatain (ــًــ), Kasratain (ــٍــ), Dammatain (ــٌــ).        | بً , بٍ , بٌ                                           | Ban, Bin, Bun                     |
+| **Sukoon (ــْــ)**             | Indicates the absence of a vowel, creating a consonant sound.                        | بْ , مْ , نْ                                           | B, M, N                           |
+| **Maddah (ـــٓــ)**            | Prolongation of vowel sounds.                                                        | بـَا , بـِي , بـُو                                     | Baa, Bee, Buu                     |
+| **Shaddah (ــّــ)**            | Indicates a doubled consonant sound.                                                 | بَّ , بِّ , بُّ                                        | Bba, Bbi, Bbu                     |
+| **Noon Sakin & Tanween Rules** | Tajweed rules: Idgham (merging), Iqlab (changing), Ikhfa (hiding), Idhaar (clarity). | مِنَ , أَنْبَرَ                                        | Mina, Anbara                      |
+| **Meem Sakin Rules**           | Tajweed rules for Meem Sakin: Ikhfa Shafawi and Idgham Shafawi.                      | أَمْنُ, يُمْسِكُ                                       | Amnu, Yumsiku                     |
+| **Simple Words**               | Combining letters and harakat to form words.                                         | كَتَبَ (Kataba – He wrote), سَمِعَ (Sami’a – He heard) | Kataba, Sami’a                    |
+| **Short Sentences**            | Reading and reciting short sentences with proper application of rules.               | كَتَبَ مُحَمَّدٌ دَرْسًا (Kataba Muhammadun Darsan)    | Kataba Muhammadun Darsan          |
+| **Practice Surahs**            | Recitation of short Surahs to apply all learned rules.                               | سُورَةُ الْفَاتِحَة (Surah Al-Fatiha)                  | Recite with proper Tajweed        |
+
+
+// -------------------------------------------------------------------------------------------------------------------
+
+The table you shared covers the **foundational rules of Noorani Qaida**, which is **excellent for beginners**—especially children and new learners.
+It includes the essentials of **pronunciation, basic tajweed, and reading skills**, but **it does not cover everything required for mastering 
+Quranic Arabic**.
+
+Here’s a breakdown:
+
+---
+
+## ✅ What *is* covered:
+
+These are crucial **pre-requisites for reading the Qur’an correctly**:
+
+* Arabic letters and their different forms
+* Short vowels (Harakat) and Tanween
+* Sukoon, Madd, Shaddah
+* Basic Tajweed rules (Noon Sakin, Meem Sakin)
+* Word and sentence reading
+* Practice surahs
+
+---
+
+## ❌ What is *not* covered (but needed for full comprehension of Quranic Arabic):
+
+To **understand** the Quran, not just read it, you will eventually need:
+
+### 🟡 1. **Arabic Grammar (Nahw)**
+
+* Noun/adjective agreement
+* Sentence structure (jumla ismiyyah vs jumla fi’liyya)
+* Subject/predicate, verb conjugation
+* Case endings: nominative, accusative, genitive (raf’, nasb, jarr)
+
+### 🟡 2. **Morphology (Sarf)**
+
+* Verb forms (فعل forms I to X)
+* Root words and patterns
+* Conjugation of verbs and derived nouns
+* Verb tenses: past, present, imperative
+
+### 🟡 3. **Advanced Tajweed**
+
+* Rules of Ghunnah
+* Heavy and light letters (Tafkheem vs Tarqeeq)
+* Stopping rules (Waqf)
+* Madd categories: Madd Asli, Madd Far’i, etc.
+
+### 🟡 4. **Quran Vocabulary**
+
+* Common Quranic words (approx. 70–80% of the Qur’an comes from \~500 words)
+* Practice with root-based vocabulary learning
+
+### 🟡 5. **Quranic Syntax and Semantics**
+
+* How meanings change based on sentence structure
+* Contextual meanings
+* Balagha (rhetoric) – for advanced learners
+
+---
+
+## ✅ In Summary:
+
+Your Qaida content **does a great job** preparing learners to **read the Qur’an fluently with Tajweed**.
+But to **understand** the Qur’an:
+
+> You’ll need to **follow up** with Arabic grammar (Nahw), morphology (Sarf), and Quranic vocabulary/study.
+
+Would you like help in creating a **roadmap after Noorani Qaida** to learn Quranic Arabic step-by-step?

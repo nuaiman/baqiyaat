@@ -1,3 +1,4 @@
+import 'package:app/features/qaida/ch3/screens/lesson_6_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:app/core/utils/navigators.dart';
 import 'package:app/features/qaida/ch1/screens/lesson_1_screen.dart';
@@ -71,44 +72,32 @@ class QaidaContentScreen extends ConsumerWidget {
               _buildChapter(context, 'Chapter 3: Elongation (Madd)', [
                 _buildLessonTile(
                   context,
-                  title: 'Lesson 6: Alif Madd',
-                  // onTap: () => navigateTo(context, const AlifMaddScreen()),
+                  title: 'Lesson 6: Alif Madd & Dagger Alif',
+                  onTap: () => navigateTo(context, const Lesson6Screen()),
                 ),
                 _buildLessonTile(
                   context,
                   title: 'Lesson 7: Yaa Madd',
-                  // onTap: () => navigateTo(context, const YaaMaddScreen()),
+                  // onTap: () => navigateTo(context, const Lesson7Screen()),
                 ),
                 _buildLessonTile(
                   context,
                   title: 'Lesson 8: Waaw Madd',
-                  // onTap: () => navigateTo(context, const WaawMaddScreen()),
+                  // onTap: () => navigateTo(context, const Lesson8Screen()),
                 ),
                 _buildLessonTile(
                   context,
                   title:
                       'Lesson 9: Madd Mutaṣṣil & Munfaṣṣil (4-count & 6-count)',
-                  // onTap: () => navigateTo(context, const WaawMaddScreen()),
+                  // onTap: () => navigateTo(context, const Lesson9Screen()),
                 ),
                 _buildLessonTile(
                   context,
                   title: 'Lesson 10: Soft Madd (Madd Līn)',
-                  // onTap: () => navigateTo(context, const WaawMaddScreen()),
+                  // onTap: () => navigateTo(context, const Lesson10Screen()),
                 ),
               ]),
 
-              // _buildChapter(context, 'Chapter 3: Connecting Letters', [
-              //   _buildLessonTile(
-              //     context,
-              //     title: 'Lesson 6: Sukoon & Qalqalah',
-              //     onTap: () => navigateTo(context, const Lesson6Screen()),
-              //   ),
-              //   _buildLessonTile(
-              //     context,
-              //     title: 'Lesson 7: Sukoon with Vowels (Grouped)',
-              //     onTap: () => navigateTo(context, const Lesson7Screen()),
-              //   ),
-              // ]),
               _buildChapter(context, 'Chapter 4: Connecting Letters', [
                 _buildLessonTile(
                   context,
