@@ -11,7 +11,7 @@ class Lesson3Screen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final harakats = ref.read(harakatsProvider);
     return Scaffold(
-      appBar: AppBar(title: Text('Harakats')),
+      appBar: AppBar(title: Text('Lesson 3: Harakat'), centerTitle: true),
       body: Column(
         children: [
           Row(
@@ -26,7 +26,7 @@ class Lesson3Screen extends ConsumerWidget {
               itemCount: harakats.length,
               itemBuilder: (context, index) {
                 final harakt = harakats[index];
-                return Lesson4Card(harakatModel: harakt);
+                return Lesson3Card(harakatModel: harakt);
               },
             ),
           ),

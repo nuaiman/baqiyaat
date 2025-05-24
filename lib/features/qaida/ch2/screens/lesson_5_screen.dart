@@ -24,7 +24,7 @@ class Lesson5Screen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Grouped Letters with Harakat & Tanween'),
+        title: const Text('Lesson 5: Grouped Letters with Harakat & Tanween'),
         centerTitle: true,
       ),
       body: Directionality(

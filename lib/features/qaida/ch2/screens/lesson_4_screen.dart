@@ -11,7 +11,7 @@ class Lesson4Screen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final tanweens = ref.watch(tanweensProvider);
     return Scaffold(
-      appBar: AppBar(title: const Text('Tanween')),
+      appBar: AppBar(title: const Text('Lesson 4: Tanween'), centerTitle: true),
       body: Column(
         children: [
           Row(

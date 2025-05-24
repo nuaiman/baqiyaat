@@ -46,7 +46,10 @@ class Lesson2Screen extends StatelessWidget {
     };
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Grouped Letters'), centerTitle: true),
+      appBar: AppBar(
+        title: const Text('Lesson 2: Grouped Letters'),
+        centerTitle: true,
+      ),
       body: Directionality(
         textDirection: TextDirection.rtl,
         child: GridView.builder(

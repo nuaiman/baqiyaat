@@ -5,7 +5,6 @@ import 'package:app/features/qaida/ch1/screens/lesson_1_screen.dart';
 import 'package:app/features/qaida/ch1/screens/lesson_2_screen.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../../core/notifiers/app_theme_notifier.dart';
 import '../../ch2/screens/lesson_3_screen.dart';
 import '../../ch2/screens/lesson_4_screen.dart';
 import '../../ch2/screens/lesson_5_screen.dart';
@@ -18,18 +17,7 @@ class QaidaContentScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text('Qaida'),
-        actions: [
-          IconButton(
-            onPressed: () {
-              ref.read(appThemeNotifierProvider.notifier).toggleTheme();
-            },
-            icon: Icon(Icons.light),
-          ),
-        ],
-      ),
+      appBar: AppBar(centerTitle: true, title: const Text('Qaida')),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
