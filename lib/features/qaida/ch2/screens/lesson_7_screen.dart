@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../widgets/lesson_12_card.dart';
+import '../widgets/lesson_7_card.dart';
 
-class Lesson12Screen extends StatelessWidget {
-  const Lesson12Screen({super.key});
+class Lesson7Screen extends StatelessWidget {
+  const Lesson7Screen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +50,7 @@ class Lesson12Screen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Sukoon with Vowels'),
+        title: const Text('Lesson 7: Sukoon with Vowels (Grouped)'),
         centerTitle: true,
       ),
       body: Directionality(
@@ -67,7 +67,7 @@ class Lesson12Screen extends StatelessWidget {
           itemBuilder: (context, index) {
             final itemKey = groupedData.keys.elementAt(index);
             final itemValue = groupedData[itemKey]!['text']!;
-            return Lesson12Card(itemValue: itemValue, itemKey: itemKey);
+            return Lesson7Card(itemValue: itemValue, itemKey: itemKey);
           },
         ),
       ),

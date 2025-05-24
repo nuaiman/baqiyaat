@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../core/notifiers/app_theme_notifier.dart';
 import '../../../../core/notifiers/audio_player.dart';
-import '../../../../core/theme/app_palette.dart';
+import '../../../../core/theme/app_palette.dart'; // Import AppPalette for border color
 
-class Lesson12Card extends ConsumerWidget {
-  const Lesson12Card({
+class Lesson7Card extends ConsumerStatefulWidget {
+  // Changed to ConsumerStatefulWidget
+  const Lesson7Card({
     super.key,
     required this.itemValue,
     required this.itemKey,
@@ -15,7 +16,14 @@ class Lesson12Card extends ConsumerWidget {
   final String itemKey;
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<Lesson7Card> createState() => _Lesson7CardState();
+}
+
+class _Lesson7CardState extends ConsumerState<Lesson7Card> {
+  bool _isTapped = false; // State to track if the card is tapped
+
+  @override
+  Widget build(BuildContext context) {
     final isLightTheme = ref.watch(appThemeNotifierProvider) == ThemeMode.light;
 
     return LayoutBuilder(
@@ -25,13 +33,25 @@ class Lesson12Card extends ConsumerWidget {
 
         return GestureDetector(
           onTap: () {
+            // Toggle the tapped state
+            setState(() {
+              _isTapped = !_isTapped;
+            });
+            // Play audio
             ref
                 .read(audioPlayerProvider.notifier)
-                .play('assets/audio/qaida/lesson12/$itemKey.m4a');
+                .play('assets/audio/qaida/lesson7/${widget.itemKey}.m4a');
           },
           child: Card(
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20 * scale),
+              side:
+                  _isTapped // Apply border if tapped
+                      ? BorderSide(
+                        color: AppPalette.active,
+                        width: 3.0 * scale,
+                      ) // Use AppPalette.active for the border color
+                      : BorderSide.none, // No border when not tapped
             ),
             margin: EdgeInsets.all(10 * scale),
             child: Stack(
@@ -43,7 +63,7 @@ class Lesson12Card extends ConsumerWidget {
                   left: 0 * scale,
                   child: Center(
                     child: Text(
-                      itemKey,
+                      widget.itemKey,
                       style: TextStyle(
                         fontSize: 36 * scale,
                         fontWeight: FontWeight.w600,
@@ -60,7 +80,7 @@ class Lesson12Card extends ConsumerWidget {
                   child: Padding(
                     padding: EdgeInsets.all(24 * scale),
                     child: Text(
-                      itemValue,
+                      widget.itemValue,
                       style: Theme.of(context).textTheme.headlineLarge
                           ?.copyWith(fontSize: 120 * scale),
                       textAlign: TextAlign.center,

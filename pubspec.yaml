@@ -29,8 +29,8 @@ flutter:
     - assets/audio/qaida/lesson3/
     - assets/audio/qaida/lesson4/
     - assets/audio/qaida/lesson5/
-    - assets/audio/qaida/lesson11/
-    - assets/audio/qaida/lesson12/
+    - assets/audio/qaida/lesson6/
+    - assets/audio/qaida/lesson7/
 
   fonts:
     - family: Uthmani
