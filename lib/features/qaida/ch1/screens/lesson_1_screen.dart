@@ -19,15 +19,7 @@ class Lesson1Screen extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text('Arabic Letters'),
-        actions: [
-          IconButton(
-            onPressed: () {
-              ref.read(appThemeNotifierProvider.notifier).toggleTheme();
-            },
-            icon: Icon(Icons.light),
-          ),
-        ],
+        title: const Text('Lesson 1: Letters & Their Positional Forms'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),

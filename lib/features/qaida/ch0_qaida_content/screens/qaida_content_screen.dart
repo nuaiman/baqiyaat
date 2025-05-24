@@ -40,7 +40,7 @@ class QaidaContentScreen extends ConsumerWidget {
                 [
                   _buildLessonTile(
                     context,
-                    title: 'Lesson 1: Forms of Letters',
+                    title: 'Lesson 1: Letters & Their Positional Forms',
                     onTap: () => navigateTo(context, const Lesson1Screen()),
                   ),
                   _buildLessonTile(

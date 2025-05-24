@@ -5,14 +5,21 @@ import '../../../../core/notifiers/app_theme_notifier.dart';
 import '../../../../core/notifiers/audio_player.dart';
 import '../../../../core/theme/app_palette.dart';
 
-class LessonOneCard extends ConsumerWidget {
+class LessonOneCard extends ConsumerStatefulWidget {
+  // Changed to ConsumerStatefulWidget
   const LessonOneCard({super.key, required this.harf});
 
   final Harf harf;
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    // final isBanglaSelected = ref.watch(languageProvider) == LanguageEnum.bangla;
+  ConsumerState<LessonOneCard> createState() => _LessonOneCardState();
+}
+
+class _LessonOneCardState extends ConsumerState<LessonOneCard> {
+  bool _isTapped = false; // State to track if the card is tapped
+
+  @override
+  Widget build(BuildContext context) {
     final isLightTheme = ref.watch(appThemeNotifierProvider) == ThemeMode.light;
     return LayoutBuilder(
       builder: (context, constraints) {
@@ -22,13 +29,25 @@ class LessonOneCard extends ConsumerWidget {
           textDirection: TextDirection.ltr,
           child: GestureDetector(
             onTap: () {
+              // Toggle the tapped state
+              setState(() {
+                _isTapped = !_isTapped;
+              });
+              // Play audio
               ref
                   .read(audioPlayerProvider.notifier)
-                  .play('assets/audio/qaida/lesson1/${harf.id}.m4a');
+                  .play('assets/audio/qaida/lesson1/${widget.harf.id}.m4a');
             },
             child: Card(
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20 * scale),
+                side:
+                    _isTapped // Apply border if tapped
+                        ? BorderSide(
+                          color: AppPalette.active,
+                          width: 3.0 * scale,
+                        )
+                        : BorderSide.none, // No border when not tapped
               ),
               elevation: 0,
               margin: EdgeInsets.all(10 * scale),
@@ -44,7 +63,7 @@ class LessonOneCard extends ConsumerWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           _buildText(
-                            harf.id.toString(),
+                            widget.harf.id.toString(),
                             fontSize: 20 * scale,
                             isLightTheme: isLightTheme,
                           ),
@@ -63,9 +82,21 @@ class LessonOneCard extends ConsumerWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
-                                _buildListItem('Beginning', harf.start, scale),
-                                _buildListItem('Middle', harf.mid, scale),
-                                _buildListItem('Ending', harf.end, scale),
+                                _buildListItem(
+                                  'Beginning',
+                                  widget.harf.start,
+                                  scale,
+                                ),
+                                _buildListItem(
+                                  'Middle',
+                                  widget.harf.mid,
+                                  scale,
+                                ),
+                                _buildListItem(
+                                  'Ending',
+                                  widget.harf.end,
+                                  scale,
+                                ),
                               ],
                             ),
                           ),
@@ -79,8 +110,8 @@ class LessonOneCard extends ConsumerWidget {
                               children: [
                                 _buildIsolatedInfo(
                                   'Isolated',
-                                  harf.arPronunciation,
-                                  harf.enPronunciation,
+                                  widget.harf.arPronunciation,
+                                  widget.harf.enPronunciation,
                                   scale,
                                 ),
                                 SizedBox(height: 10 * scale),
@@ -89,14 +120,11 @@ class LessonOneCard extends ConsumerWidget {
                                     child: Padding(
                                       padding: EdgeInsets.all(12 * scale),
                                       child: Text(
-                                        harf.isolated,
-                                        style: Theme.of(
-                                          context,
-                                        ).textTheme.bodyLarge?.copyWith(
-                                          fontSize: 100 * scale,
-                                          // color: AppPalette.active,
-                                          // fontWeight: FontWeight.bold,
-                                        ),
+                                        widget.harf.isolated,
+                                        style: Theme.of(context)
+                                            .textTheme
+                                            .bodyLarge
+                                            ?.copyWith(fontSize: 100 * scale),
                                       ),
                                     ),
                                   ),
@@ -146,7 +174,6 @@ class LessonOneCard extends ConsumerWidget {
               color: AppPalette.active,
             ),
           ),
-          // SizedBox(height: 4 * scale),
           Text(
             value,
             style: TextStyle(fontSize: 42 * scale, fontWeight: FontWeight.w500),
