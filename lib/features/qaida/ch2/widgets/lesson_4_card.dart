@@ -48,8 +48,9 @@ class Lesson4Card extends ConsumerWidget {
                         child: Center(
                           child: Text(
                             tanweenModel.dammatain,
-                            style: Theme.of(context).textTheme.headlineLarge
-                                ?.copyWith(fontWeight: FontWeight.bold),
+                            style: Theme.of(
+                              context,
+                            ).textTheme.headlineLarge?.copyWith(fontSize: 48),
                             textAlign: TextAlign.center,
                           ),
                         ),
@@ -64,8 +65,9 @@ class Lesson4Card extends ConsumerWidget {
                         child: Center(
                           child: Text(
                             tanweenModel.kasratain,
-                            style: Theme.of(context).textTheme.headlineLarge
-                                ?.copyWith(fontWeight: FontWeight.bold),
+                            style: Theme.of(
+                              context,
+                            ).textTheme.headlineLarge?.copyWith(fontSize: 48),
                             textAlign: TextAlign.center,
                           ),
                         ),
@@ -80,8 +82,9 @@ class Lesson4Card extends ConsumerWidget {
                         child: Center(
                           child: Text(
                             tanweenModel.fathatain,
-                            style: Theme.of(context).textTheme.headlineLarge
-                                ?.copyWith(fontWeight: FontWeight.bold),
+                            style: Theme.of(
+                              context,
+                            ).textTheme.headlineLarge?.copyWith(fontSize: 48),
                             textAlign: TextAlign.center,
                           ),
                         ),

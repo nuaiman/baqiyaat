@@ -12,12 +12,25 @@ class Lesson4Screen extends ConsumerWidget {
     final tanweens = ref.watch(tanweensProvider);
     return Scaffold(
       appBar: AppBar(title: const Text('Tanween')),
-      body: ListView.builder(
-        itemCount: tanweens.length,
-        itemBuilder: (context, index) {
-          final tanween = tanweens[index];
-          return Lesson4Card(tanweenModel: tanween);
-        },
+      body: Column(
+        children: [
+          Row(
+            children: [
+              Expanded(child: Center(child: Text('Dhammahtain'))),
+              Expanded(child: Center(child: Text('Kasrahtain'))),
+              Expanded(child: Center(child: Text('Fathahtain'))),
+            ],
+          ),
+          Expanded(
+            child: ListView.builder(
+              itemCount: tanweens.length,
+              itemBuilder: (context, index) {
+                final tanween = tanweens[index];
+                return Lesson4Card(tanweenModel: tanween);
+              },
+            ),
+          ),
+        ],
       ),
     );
   }

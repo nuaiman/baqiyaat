@@ -48,8 +48,9 @@ class Lesson4Card extends ConsumerWidget {
                         child: Center(
                           child: Text(
                             harakatModel.dammah,
-                            style: Theme.of(context).textTheme.headlineLarge
-                                ?.copyWith(fontWeight: FontWeight.bold),
+                            style: Theme.of(
+                              context,
+                            ).textTheme.headlineLarge?.copyWith(fontSize: 48),
                             textAlign: TextAlign.center,
                           ),
                         ),
@@ -64,8 +65,9 @@ class Lesson4Card extends ConsumerWidget {
                         child: Center(
                           child: Text(
                             harakatModel.kasrah,
-                            style: Theme.of(context).textTheme.headlineLarge
-                                ?.copyWith(fontWeight: FontWeight.bold),
+                            style: Theme.of(
+                              context,
+                            ).textTheme.headlineLarge?.copyWith(fontSize: 48),
                             textAlign: TextAlign.center,
                           ),
                         ),
@@ -80,8 +82,9 @@ class Lesson4Card extends ConsumerWidget {
                         child: Center(
                           child: Text(
                             harakatModel.fatha,
-                            style: Theme.of(context).textTheme.headlineLarge
-                                ?.copyWith(fontWeight: FontWeight.bold),
+                            style: Theme.of(
+                              context,
+                            ).textTheme.headlineLarge?.copyWith(fontSize: 48),
                             textAlign: TextAlign.center,
                           ),
                         ),
